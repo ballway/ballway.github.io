@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\img",
+    "\\css"
   ],
+  "SelectedNode": "\\assets\\img\\bg-masthead.jpg",
   "PreviewInSolutionExplorer": false
 }
