@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>檔案格式檢查 on Michael&#39;s Blog</title>
+    <link>https://ballway.github.io/zh/tags/%E6%AA%94%E6%A1%88%E6%A0%BC%E5%BC%8F%E6%AA%A2%E6%9F%A5/</link>
+    <description>Recent content in 檔案格式檢查 on Michael&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/zh/tags/%E6%AA%94%E6%A1%88%E6%A0%BC%E5%BC%8F%E6%AA%A2%E6%9F%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>檔案上傳安全機制</title>
+      <link>https://ballway.github.io/zh/posts/file-upload-security-mechanism/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/file-upload-security-mechanism/</guid>
+      <description>如果 App 有提供上傳圖片、上傳檔案的功能，有一些檔案的安全機制需要注意一下。</description>
+    </item>
+    
+  </channel>
+</rss>
