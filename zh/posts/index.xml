@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>三層式架構</title>
+      <link>https://ballway.github.io/zh/posts/three-tier-architecture/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/three-tier-architecture/</guid>
+      <description>關於三層式架構的說明。</description>
+    </item>
+    
+    <item>
       <title>關於 C# 運算子 &amp;&amp; 的判斷順序</title>
       <link>https://ballway.github.io/zh/posts/csharp-boolean-logical-operators-and/</link>
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>

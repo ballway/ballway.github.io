@@ -46,6 +46,16 @@
   </url><url>
     <loc>https://ballway.github.io/en/tags/proposal/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/tags/proposal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/tags/proposal/"
+                />
   </url><url>
     <loc>https://ballway.github.io/en/tags/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
@@ -58,6 +68,57 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ballway.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://ballway.github.io/en/posts/csharp-boolean-logical-operators-and/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/posts/csharp-boolean-logical-operators-and/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/posts/csharp-boolean-logical-operators-and/"
+                />
+  </url><url>
+    <loc>https://ballway.github.io/en/tags/csharp/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/tags/csharp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/tags/csharp/"
+                />
+  </url><url>
+    <loc>https://ballway.github.io/en/tags/tech/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/tags/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/tags/tech/"
+                />
+  </url><url>
+    <loc>https://ballway.github.io/en/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/archives/"
                 />
   </url><url>
     <loc>https://ballway.github.io/en/categories/</loc>
@@ -94,18 +155,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ballway.github.io/en/series/"
-                />
-  </url><url>
-    <loc>https://ballway.github.io/en/archives/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://ballway.github.io/zh/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ballway.github.io/en/archives/"
                 />
   </url>
 </urlset>
