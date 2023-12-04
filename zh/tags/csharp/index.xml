@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/zh/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>關於 C# 運算子 &amp;&amp; 的判斷順序</title>
-      <link>https://ballway.github.io/zh/posts/csharp-boolean-logical-operators-and/</link>
+      <link>https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/</link>
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ballway.github.io/zh/posts/csharp-boolean-logical-operators-and/</guid>
+      <guid>https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/</guid>
       <description>關於 C# 運算子 AND 的判斷順序，左邊遇到 False 後，右邊就不會評估了。</description>
     </item>
     

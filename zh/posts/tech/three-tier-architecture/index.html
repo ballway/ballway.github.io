@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>三層式架構簡介 | Michael&#39;s Blog</title>
+<meta name="keywords" content="軟體架構設計">
+<meta name="description" content="關於分層架構的說明">
+<meta name="author" content="">
+<link rel="canonical" href="https://ballway.github.io/zh/posts/tech/three-tier-architecture/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://ballway.github.io/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ballway.github.io/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ballway.github.io/assets/favicon.ico">
+<link rel="apple-touch-icon" href="https://ballway.github.io/assets/favicon.ico">
+<link rel="mask-icon" href="https://ballway.github.io/assets/favicon.ico">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="https://ballway.github.io/zh/posts/tech/three-tier-architecture/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="三層式架構簡介" />
+<meta property="og:description" content="關於分層架構的說明" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ballway.github.io/zh/posts/tech/three-tier-architecture/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-06-21T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="三層式架構簡介"/>
+<meta name="twitter:description" content="關於分層架構的說明"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "文章分類",
+      "item": "https://ballway.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "技術",
+      "item": "https://ballway.github.io/zh/posts/tech/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "三層式架構簡介",
+      "item": "https://ballway.github.io/zh/posts/tech/three-tier-architecture/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "三層式架構簡介",
+  "name": "三層式架構簡介",
+  "description": "關於分層架構的說明",
+  "keywords": [
+    "軟體架構設計"
+  ],
+  "articleBody": "其實分層架構不一定是分成三層，是否再切更多層要視團隊而定。\n以我自己的開發經驗來說，開發上主要會分成這三層：\nPresentation Layer Service Layer Data Acces Layer 展示層 (Presentation Layer) 最接近使用者的一層，在接收使用者的請求後，會請服務層做處理，再將得到的結果展示給使用者。\n服務層 (Service Layer) 因為是處理商業邏輯的一層，所以又稱為商業邏輯層。 會請資料存取層處理資料，再把得到的結果交給展示層。\n資料存取層 (Data Acces Layer) 資料存取層的物件 (Data Access Object，簡稱 Dao) 是 Service 層用於取得資料的窗口，通常包含與資料庫連線、對資料來源操作 CRUD、OR-Mapping 等內部細節實作，並將取得的資料以 Domain Object 的形式提供給 Service 層調用。 而因為會把資料存至資料庫或檔案，進行長期保存，資料存取層又稱為持久層 (Persistence Layer)。\n各層傳遞的資料物件： Domain Object 是用於表示 DB Table 內單筆資料的資料物件\nDTO (Data Transfer Object) 是服務層和展示層之間溝通用的資料物件。\n1 2 DTO 規劃小技巧： 如果 Input (傳入服務層) 和 Output (傳到展示層) 用到的 DTO 欄位不重複時，使用 DTO 時應該就不會每次都把欄位填滿，這時可以分成兩個 DTO 來操作，如果能規劃成拿了這個 DTO 就是要把所有的欄位都填滿的情境，這樣在使用 DTO 的時候，比較不用去記哪些欄位這次要用到，哪些欄位則不用。 通常一個 DTO 會對應至少一個 Domain Object，並在服務層操作 Domain Object 和 DTO 物件的資料交換。\n文章作者: Michael\n上次更新: 2023-12-01\n授權條款: 保留所有權利\n",
+  "wordCount" : "553",
+  "inLanguage": "zh",
+  "datePublished": "2023-06-21T00:00:00Z",
+  "dateModified": "2023-06-21T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ballway.github.io/zh/posts/tech/three-tier-architecture/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Michael's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ballway.github.io/assets/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://ballway.github.io/zh/" accesskey="h" title="Michael&#39;s Blog (Alt + H)">Michael&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://ballway.github.io/en/" title="en"
+                            aria-label="en">en</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://ballway.github.io/zh/posts/tech/" title="技術">
+                    <span>技術</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ballway.github.io/zh/posts/business/" title="商業">
+                    <span>商業</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ballway.github.io/zh/archives" title="文章彙整">
+                    <span>文章彙整</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ballway.github.io/zh/tags" title="標籤">
+                    <span>標籤</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://ballway.github.io/zh/search" title="站內搜尋 (Alt &#43; /)" accesskey=/>
+                    <span>站內搜尋</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://ballway.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://ballway.github.io/zh/posts/">文章分類</a>&nbsp;»&nbsp;<a href="https://ballway.github.io/zh/posts/tech/">技術</a></div>
+    <h1 class="post-title">
+      三層式架構簡介
+    </h1>
+    <div class="post-meta"><span title='2023-06-21 00:00:00 +0000 UTC'>2023-06-21</span>&nbsp;·&nbsp;2 分鐘
+
+</div>
+  </header> 
+  <div class="post-content"><p>其實分層架構不一定是分成三層，是否再切更多層要視團隊而定。</p>
+<p>以我自己的開發經驗來說，開發上主要會分成這三層：</p>
+<ul>
+<li>Presentation Layer</li>
+<li>Service Layer</li>
+<li>Data Acces Layer</li>
+</ul>
+<hr>
+<h2 id="展示層-presentation-layer">展示層 (Presentation Layer)<a hidden class="anchor" aria-hidden="true" href="#展示層-presentation-layer">#</a></h2>
+<p>最接近使用者的一層，在接收使用者的請求後，會請服務層做處理，再將得到的結果展示給使用者。</p>
+<hr>
+<h2 id="服務層-service-layer">服務層 (Service Layer)<a hidden class="anchor" aria-hidden="true" href="#服務層-service-layer">#</a></h2>
+<p>因為是處理商業邏輯的一層，所以又稱為商業邏輯層。
+會請資料存取層處理資料，再把得到的結果交給展示層。</p>
+<hr>
+<h2 id="資料存取層-data-acces-layer">資料存取層 (Data Acces Layer)<a hidden class="anchor" aria-hidden="true" href="#資料存取層-data-acces-layer">#</a></h2>
+<p>資料存取層的物件 (Data Access Object，簡稱 Dao) 是 Service 層用於取得資料的窗口，通常包含與資料庫連線、對資料來源操作 CRUD、OR-Mapping 等內部細節實作，並將取得的資料以 Domain Object 的形式提供給 Service 層調用。
+而因為會把資料存至資料庫或檔案，進行長期保存，資料存取層又稱為持久層 (Persistence Layer)。</p>
+<hr>
+<h2 id="各層傳遞的資料物件">各層傳遞的資料物件：<a hidden class="anchor" aria-hidden="true" href="#各層傳遞的資料物件">#</a></h2>
+<ul>
+<li>
+<p>Domain Object 是用於表示 DB Table 內單筆資料的資料物件</p>
+</li>
+<li>
+<p>DTO (Data Transfer Object) 是服務層和展示層之間溝通用的資料物件。</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">DTO 規劃小技巧：
+</span></span><span class="line"><span class="cl">如果 Input (傳入服務層) 和 Output (傳到展示層) 用到的 DTO 欄位不重複時，使用 DTO 時應該就不會每次都把欄位填滿，這時可以分成兩個 DTO 來操作，如果能規劃成拿了這個 DTO 就是要把所有的欄位都填滿的情境，這樣在使用 DTO 的時候，比較不用去記哪些欄位這次要用到，哪些欄位則不用。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>通常一個 DTO 會對應至少一個 Domain Object，並在服務層操作 Domain Object 和 DTO 物件的資料交換。</p>
+<hr>
+<blockquote>
+<p><strong>文章作者</strong>: Michael</p>
+<p><strong>上次更新</strong>: 2023-12-01</p>
+<p><strong>授權條款</strong>: 保留所有權利</p>
+</blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://ballway.github.io/zh/tags/%E8%BB%9F%E9%AB%94%E6%9E%B6%E6%A7%8B%E8%A8%AD%E8%A8%88/">軟體架構設計</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://ballway.github.io/zh/posts/tech/file-upload-security-mechanism/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>檔案上傳安全機制</span>
+  </a>
+  <a class="next" href="https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>關於 C# 運算子 &amp;&amp; 的判斷順序</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://ballway.github.io/zh/">Michael&#39;s Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

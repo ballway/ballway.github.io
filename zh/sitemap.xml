@@ -15,32 +15,6 @@
                 href="https://ballway.github.io/zh/"
                 />
   </url><url>
-    <loc>https://ballway.github.io/zh/posts/</loc>
-    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ballway.github.io/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://ballway.github.io/zh/posts/"
-                />
-  </url><url>
-    <loc>https://ballway.github.io/zh/tags/proposal/</loc>
-    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ballway.github.io/en/tags/proposal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://ballway.github.io/zh/tags/proposal/"
-                />
-  </url><url>
     <loc>https://ballway.github.io/zh/tags/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -54,45 +28,74 @@
                 href="https://ballway.github.io/zh/tags/"
                 />
   </url><url>
-    <loc>https://ballway.github.io/zh/posts/adivce-about-atcc-case-competition/</loc>
+    <loc>https://ballway.github.io/zh/posts/business/adivce-about-atcc-case-competition/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ballway.github.io/en/posts/adivce-about-atcc-case-competition/"
+                href="https://ballway.github.io/en/posts/business/adivce-about-atcc-case-competition/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ballway.github.io/zh/posts/adivce-about-atcc-case-competition/"
+                href="https://ballway.github.io/zh/posts/business/adivce-about-atcc-case-competition/"
+                />
+  </url><url>
+    <loc>https://ballway.github.io/zh/tags/%E4%BC%81%E5%8A%83/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/posts/business/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/posts/business/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/posts/business/"
                 />
   </url><url>
     <loc>https://ballway.github.io/zh/tags/%E5%95%86%E6%A5%AD%E7%AB%B6%E8%B3%BD/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ballway.github.io/zh/tags/tech/</loc>
-    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+    <loc>https://ballway.github.io/zh/posts/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ballway.github.io/en/tags/tech/"
+                href="https://ballway.github.io/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ballway.github.io/zh/tags/tech/"
+                href="https://ballway.github.io/zh/posts/"
                 />
   </url><url>
     <loc>https://ballway.github.io/zh/tags/%E6%AA%94%E6%A1%88%E6%A0%BC%E5%BC%8F%E6%AA%A2%E6%9F%A5/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ballway.github.io/zh/posts/file-upload-security-mechanism/</loc>
+    <loc>https://ballway.github.io/zh/posts/tech/file-upload-security-mechanism/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/posts/tech/</loc>
+    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/posts/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/posts/tech/"
+                />
   </url><url>
     <loc>https://ballway.github.io/zh/tags/%E8%BB%9F%E9%AB%94%E6%9E%B6%E6%A7%8B%E8%A8%AD%E8%A8%88/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ballway.github.io/zh/posts/three-tier-architecture/</loc>
+    <loc>https://ballway.github.io/zh/posts/tech/three-tier-architecture/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ballway.github.io/zh/tags/%E8%B3%87%E5%AE%89/</loc>
@@ -111,17 +114,17 @@
                 href="https://ballway.github.io/zh/tags/csharp/"
                 />
   </url><url>
-    <loc>https://ballway.github.io/zh/posts/csharp-boolean-logical-operators-and/</loc>
+    <loc>https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ballway.github.io/en/posts/csharp-boolean-logical-operators-and/"
+                href="https://ballway.github.io/en/posts/tech/csharp-boolean-logical-operators-and/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ballway.github.io/zh/posts/csharp-boolean-logical-operators-and/"
+                href="https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/"
                 />
   </url><url>
     <loc>https://ballway.github.io/zh/categories/</loc>

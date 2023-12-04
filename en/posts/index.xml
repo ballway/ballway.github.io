@@ -7,23 +7,5 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Adivce about ATCC Case Competition</title>
-      <link>https://ballway.github.io/en/posts/adivce-about-atcc-case-competition/</link>
-      <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ballway.github.io/en/posts/adivce-about-atcc-case-competition/</guid>
-      <description>The English content is not completely ready.</description>
-    </item>
-    
-    <item>
-      <title>About C# Boolean Logical Operators: &amp;&amp;</title>
-      <link>https://ballway.github.io/en/posts/csharp-boolean-logical-operators-and/</link>
-      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://ballway.github.io/en/posts/csharp-boolean-logical-operators-and/</guid>
-      <description>About C# Boolean Logical Operators: &amp;amp;&amp;amp;</description>
-    </item>
-    
   </channel>
 </rss>

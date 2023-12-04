@@ -2,17 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ballway.github.io/en/posts/adivce-about-atcc-case-competition/</loc>
+    <loc>https://ballway.github.io/en/posts/business/adivce-about-atcc-case-competition/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ballway.github.io/zh/posts/adivce-about-atcc-case-competition/"
+                href="https://ballway.github.io/zh/posts/business/adivce-about-atcc-case-competition/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ballway.github.io/en/posts/adivce-about-atcc-case-competition/"
+                href="https://ballway.github.io/en/posts/business/adivce-about-atcc-case-competition/"
+                />
+  </url><url>
+    <loc>https://ballway.github.io/en/posts/business/</loc>
+    <lastmod>2023-11-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/posts/business/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/posts/business/"
                 />
   </url><url>
     <loc>https://ballway.github.io/en/tags/case-competition/</loc>
@@ -46,16 +59,6 @@
   </url><url>
     <loc>https://ballway.github.io/en/tags/proposal/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://ballway.github.io/zh/tags/proposal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ballway.github.io/en/tags/proposal/"
-                />
   </url><url>
     <loc>https://ballway.github.io/en/tags/</loc>
     <lastmod>2023-11-19T00:00:00+00:00</lastmod>
@@ -70,17 +73,17 @@
                 href="https://ballway.github.io/en/tags/"
                 />
   </url><url>
-    <loc>https://ballway.github.io/en/posts/csharp-boolean-logical-operators-and/</loc>
+    <loc>https://ballway.github.io/en/posts/tech/csharp-boolean-logical-operators-and/</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ballway.github.io/zh/posts/csharp-boolean-logical-operators-and/"
+                href="https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ballway.github.io/en/posts/csharp-boolean-logical-operators-and/"
+                href="https://ballway.github.io/en/posts/tech/csharp-boolean-logical-operators-and/"
                 />
   </url><url>
     <loc>https://ballway.github.io/en/tags/csharp/</loc>
@@ -96,17 +99,17 @@
                 href="https://ballway.github.io/en/tags/csharp/"
                 />
   </url><url>
-    <loc>https://ballway.github.io/en/tags/tech/</loc>
+    <loc>https://ballway.github.io/en/posts/tech/</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ballway.github.io/zh/tags/tech/"
+                href="https://ballway.github.io/zh/posts/tech/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ballway.github.io/en/tags/tech/"
+                href="https://ballway.github.io/en/posts/tech/"
                 />
   </url><url>
     <loc>https://ballway.github.io/en/archives/</loc>

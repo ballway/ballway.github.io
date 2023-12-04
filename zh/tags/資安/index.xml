@@ -9,11 +9,11 @@
     <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/zh/tags/%E8%B3%87%E5%AE%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>檔案上傳安全機制</title>
-      <link>https://ballway.github.io/zh/posts/file-upload-security-mechanism/</link>
+      <link>https://ballway.github.io/zh/posts/tech/file-upload-security-mechanism/</link>
       <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://ballway.github.io/zh/posts/file-upload-security-mechanism/</guid>
-      <description>如果 App 有提供上傳圖片、上傳檔案的功能，有一些檔案的安全機制需要注意一下。</description>
+      <guid>https://ballway.github.io/zh/posts/tech/file-upload-security-mechanism/</guid>
+      <description>如果 App 有提供上傳圖片、上傳檔案的功能，可以做一些檔案相關的安全機制</description>
     </item>
     
   </channel>
