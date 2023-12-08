@@ -73,10 +73,26 @@
                 href="https://ballway.github.io/zh/posts/"
                 />
   </url><url>
+    <loc>https://ballway.github.io/zh/tags/csharp/</loc>
+    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/tags/csharp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/tags/csharp/"
+                />
+  </url><url>
     <loc>https://ballway.github.io/zh/tags/%E6%AA%94%E6%A1%88%E6%A0%BC%E5%BC%8F%E6%AA%A2%E6%9F%A5/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ballway.github.io/zh/posts/tech/file-upload-security-mechanism/</loc>
+    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/posts/tech/about-csharp-try-catch/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ballway.github.io/zh/posts/tech/</loc>
@@ -92,6 +108,9 @@
                 href="https://ballway.github.io/zh/posts/tech/"
                 />
   </url><url>
+    <loc>https://ballway.github.io/zh/tags/%E4%BE%8B%E5%A4%96%E8%99%95%E7%90%86/</loc>
+    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ballway.github.io/zh/tags/%E8%BB%9F%E9%AB%94%E6%9E%B6%E6%A7%8B%E8%A8%AD%E8%A8%88/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -101,21 +120,8 @@
     <loc>https://ballway.github.io/zh/tags/%E8%B3%87%E5%AE%89/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ballway.github.io/zh/tags/csharp/</loc>
-    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ballway.github.io/en/tags/csharp/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://ballway.github.io/zh/tags/csharp/"
-                />
-  </url><url>
     <loc>https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/</loc>
-    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -126,6 +132,18 @@
                 hreflang="zh"
                 href="https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/"
                 />
+  </url><url>
+    <loc>https://ballway.github.io/zh/tags/%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B/</loc>
+    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/posts/tech/about-development-process/</loc>
+    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/tags/%E8%97%8D%E8%8A%BD%E8%80%B3%E6%A9%9F/</loc>
+    <lastmod>2022-09-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/posts/tech/my-airpods2-issue/</loc>
+    <lastmod>2022-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ballway.github.io/zh/categories/</loc>
     <xhtml:link

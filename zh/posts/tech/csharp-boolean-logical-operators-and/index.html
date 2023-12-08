@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>關於 C# 運算子 &amp;&amp; 的判斷順序 | Michael&#39;s Blog</title>
 <meta name="keywords" content="csharp">
-<meta name="description" content="關於 C# 運算子 AND 的判斷順序，左邊遇到 False 後，右邊就不會評估了。">
+<meta name="description" content="關於 C# 運算子 AND 的判斷順序：左邊遇到 False 後，右邊就不會評估了">
 <meta name="author" content="">
 <link rel="canonical" href="https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
@@ -59,15 +59,15 @@
 
     </style>
 </noscript><meta property="og:title" content="關於 C# 運算子 &amp;&amp; 的判斷順序" />
-<meta property="og:description" content="關於 C# 運算子 AND 的判斷順序，左邊遇到 False 後，右邊就不會評估了。" />
+<meta property="og:description" content="關於 C# 運算子 AND 的判斷順序：左邊遇到 False 後，右邊就不會評估了" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-05-10T00:00:00+00:00" />
-<meta property="article:modified_time" content="2023-05-10T00:00:00+00:00" />
+<meta property="article:published_time" content="2023-01-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-01-09T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="關於 C# 運算子 &amp;&amp; 的判斷順序"/>
-<meta name="twitter:description" content="關於 C# 運算子 AND 的判斷順序，左邊遇到 False 後，右邊就不會評估了。"/>
+<meta name="twitter:description" content="關於 C# 運算子 AND 的判斷順序：左邊遇到 False 後，右邊就不會評估了"/>
 
 
 <script type="application/ld+json">
@@ -102,15 +102,15 @@
   "@type": "BlogPosting",
   "headline": "關於 C# 運算子 \u0026\u0026 的判斷順序",
   "name": "關於 C# 運算子 \u0026\u0026 的判斷順序",
-  "description": "關於 C# 運算子 AND 的判斷順序，左邊遇到 False 後，右邊就不會評估了。",
+  "description": "關於 C# 運算子 AND 的判斷順序：左邊遇到 False 後，右邊就不會評估了",
   "keywords": [
     "csharp"
   ],
   "articleBody": "左邊遇到 False 後，右邊就不會評估了\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 bool SecondOperand() { Console.WriteLine(\"Second operand is evaluated.\"); return true; } bool a = false \u0026\u0026 SecondOperand(); Console.WriteLine(a); // Output: // False bool b = true \u0026\u0026 SecondOperand(); Console.WriteLine(b); // Output: // Second operand is evaluated. // True 參考自官方文件的說明：\n布林值邏輯運算子：AND, OR, NOT, XOR 文章作者: Michael\n上次更新: 2023-11-30\n授權條款: 保留所有權利\n",
   "wordCount" : "118",
   "inLanguage": "zh",
-  "datePublished": "2023-05-10T00:00:00Z",
-  "dateModified": "2023-05-10T00:00:00Z",
+  "datePublished": "2023-01-09T00:00:00Z",
+  "dateModified": "2023-01-09T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/"
@@ -209,7 +209,7 @@
     <h1 class="post-title">
       關於 C# 運算子 &amp;&amp; 的判斷順序
     </h1>
-    <div class="post-meta"><span title='2023-05-10 00:00:00 +0000 UTC'>2023-05-10</span>&nbsp;·&nbsp;1 分鐘&nbsp;|&nbsp;語言:
+    <div class="post-meta"><span title='2023-01-09 00:00:00 +0000 UTC'>2023-01-09</span>&nbsp;·&nbsp;1 分鐘&nbsp;|&nbsp;語言:
 <ul class="i18n_list">
     <li>
         <a href="https://ballway.github.io/en/posts/tech/csharp-boolean-logical-operators-and/">en</a>
@@ -280,6 +280,11 @@
     <span class="title">« 上一頁</span>
     <br>
     <span>三層式架構簡介</span>
+  </a>
+  <a class="next" href="https://ballway.github.io/zh/posts/tech/about-development-process/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>開發流程：從上往下 vs. 從下往上</span>
   </a>
 </nav>
 

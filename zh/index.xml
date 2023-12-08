@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>關於 C# try-catch 的注意事項</title>
+      <link>https://ballway.github.io/zh/posts/tech/about-csharp-try-catch/</link>
+      <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/about-csharp-try-catch/</guid>
+      <description>C# 在 try-catch 的使用上有幾個要注意的點</description>
+    </item>
+    
+    <item>
       <title>三層式架構簡介</title>
       <link>https://ballway.github.io/zh/posts/tech/three-tier-architecture/</link>
       <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
@@ -37,10 +46,28 @@
     <item>
       <title>關於 C# 運算子 &amp;&amp; 的判斷順序</title>
       <link>https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/</link>
-      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/</guid>
-      <description>關於 C# 運算子 AND 的判斷順序，左邊遇到 False 後，右邊就不會評估了。</description>
+      <description>關於 C# 運算子 AND 的判斷順序：左邊遇到 False 後，右邊就不會評估了</description>
+    </item>
+    
+    <item>
+      <title>開發流程：從上往下 vs. 從下往上</title>
+      <link>https://ballway.github.io/zh/posts/tech/about-development-process/</link>
+      <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/about-development-process/</guid>
+      <description>最近和 Mentor 討論功能的開發時，討論了要用「從上往下」，還是「從下往上」的開發順序，覺得滿有意思的，所以記錄下來</description>
+    </item>
+    
+    <item>
+      <title>藍芽耳機連接電腦問題</title>
+      <link>https://ballway.github.io/zh/posts/tech/my-airpods2-issue/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/my-airpods2-issue/</guid>
+      <description>想知道能不能讓 Airpods 連電腦的時候，同時有好音質又可以有麥克風功能</description>
     </item>
     
     

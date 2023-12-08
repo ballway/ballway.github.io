@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>開發流程 on Michael&#39;s Blog</title>
+    <link>https://ballway.github.io/zh/tags/%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B/</link>
+    <description>Recent content in 開發流程 on Michael&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 20 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/zh/tags/%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>開發流程：從上往下 vs. 從下往上</title>
+      <link>https://ballway.github.io/zh/posts/tech/about-development-process/</link>
+      <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/about-development-process/</guid>
+      <description>最近和 Mentor 討論功能的開發時，討論了要用「從上往下」，還是「從下往上」的開發順序，覺得滿有意思的，所以記錄下來</description>
+    </item>
+    
+  </channel>
+</rss>
