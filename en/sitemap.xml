@@ -99,6 +99,9 @@
                 href="https://ballway.github.io/en/tags/csharp/"
                 />
   </url><url>
+    <loc>https://ballway.github.io/en/tags/encoding/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ballway.github.io/en/posts/tech/</loc>
     <lastmod>2023-05-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -110,6 +113,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ballway.github.io/en/posts/tech/"
+                />
+  </url><url>
+    <loc>https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/"
                 />
   </url><url>
     <loc>https://ballway.github.io/en/archives/</loc>

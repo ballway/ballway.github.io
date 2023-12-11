@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>編碼 on Michael&#39;s Blog</title>
+    <link>https://ballway.github.io/zh/tags/%E7%B7%A8%E7%A2%BC/</link>
+    <description>Recent content in 編碼 on Michael&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/zh/tags/%E7%B7%A8%E7%A2%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>關於 UTF-8 BOM 的使用時機</title>
+      <link>https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/</guid>
+      <description>幫自己整理了一下關於 UTF-8 BOM 編碼格式的觀念</description>
+    </item>
+    
+  </channel>
+</rss>

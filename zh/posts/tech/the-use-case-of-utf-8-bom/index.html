@@ -5,12 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Tags | Michael&#39;s Blog</title>
-<meta name="keywords" content="">
-<meta name="description" content="This is Michael Wang&#39;s Blog.">
+<title>關於 UTF-8 BOM 的使用時機 | Michael&#39;s Blog</title>
+<meta name="keywords" content="編碼">
+<meta name="description" content="幫自己整理了一下關於 UTF-8 BOM 編碼格式的觀念">
 <meta name="author" content="">
-<link rel="canonical" href="https://ballway.github.io/zh/tags/">
+<link rel="canonical" href="https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://ballway.github.io/assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://ballway.github.io/assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="https://ballway.github.io/assets/favicon.ico">
@@ -18,9 +20,8 @@
 <link rel="mask-icon" href="https://ballway.github.io/assets/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://ballway.github.io/zh/tags/index.xml">
-<link rel="alternate" hreflang="en" href="https://ballway.github.io/en/tags/">
-<link rel="alternate" hreflang="zh" href="https://ballway.github.io/zh/tags/">
+<link rel="alternate" hreflang="en" href="https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/">
+<link rel="alternate" hreflang="zh" href="https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/">
 <noscript>
     <style>
         #theme-toggle,
@@ -57,18 +58,76 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Tags" />
-<meta property="og:description" content="This is Michael Wang&#39;s Blog." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ballway.github.io/zh/tags/" />
+</noscript><meta property="og:title" content="關於 UTF-8 BOM 的使用時機" />
+<meta property="og:description" content="幫自己整理了一下關於 UTF-8 BOM 編碼格式的觀念" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-05-10T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content="This is Michael Wang&#39;s Blog."/>
+<meta name="twitter:title" content="關於 UTF-8 BOM 的使用時機"/>
+<meta name="twitter:description" content="幫自己整理了一下關於 UTF-8 BOM 編碼格式的觀念"/>
 
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "文章分類",
+      "item": "https://ballway.github.io/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "技術",
+      "item": "https://ballway.github.io/zh/posts/tech/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "關於 UTF-8 BOM 的使用時機",
+      "item": "https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "關於 UTF-8 BOM 的使用時機",
+  "name": "關於 UTF-8 BOM 的使用時機",
+  "description": "幫自己整理了一下關於 UTF-8 BOM 編碼格式的觀念",
+  "keywords": [
+    "編碼"
+  ],
+  "articleBody": "幫自己整理了一下關於 UTF-8 BOM 編碼格式的觀念：\n如果會在 SQL Script 裡寫到非英數字的內容 (註解或 insert)，UTF-8 編碼就可以派上用場 UTF-8 BOM 是比 UTF-8 多了一個標頭這樣，BOM 就是檔案會多一個標誌，讓文字編輯器一看就知道是 UTF-8 或 UTF-16 或 UTF-32 如果沒有 BOM，文字編輯器打開檔案要先掃瞄內容，來猜說這個檔案是什麼編碼，但猜的結果不一定正確，所以直接選 UTF-8-BOM 就不用擔心編輯器猜錯 文章作者: Michael\n上次更新: 2023-12-11\n授權條款: 保留所有權利\n",
+  "wordCount" : "194",
+  "inLanguage": "zh",
+  "datePublished": "2023-05-10T00:00:00Z",
+  "dateModified": "2023-05-10T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Michael's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ballway.github.io/assets/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -131,7 +190,7 @@
             </li>
             <li>
                 <a href="https://ballway.github.io/zh/tags" title="標籤">
-                    <span class="active">標籤</span>
+                    <span>標籤</span>
                 </a>
             </li>
             <li>
@@ -143,45 +202,57 @@
     </nav>
 </header>
 <main class="main">
-<header class="page-header">
-    <h1>Tags</h1>
-</header>
 
-<ul class="terms-tags">
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://ballway.github.io/zh/">首頁</a>&nbsp;»&nbsp;<a href="https://ballway.github.io/zh/posts/">文章分類</a>&nbsp;»&nbsp;<a href="https://ballway.github.io/zh/posts/tech/">技術</a></div>
+    <h1 class="post-title">
+      關於 UTF-8 BOM 的使用時機
+    </h1>
+    <div class="post-meta"><span title='2023-05-10 00:00:00 +0000 UTC'>2023-05-10</span>&nbsp;·&nbsp;1 分鐘&nbsp;|&nbsp;語言:
+<ul class="i18n_list">
     <li>
-        <a href="https://ballway.github.io/zh/tags/csharp/">csharp <sup><strong><sup>2</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/sqlite/">SQLite <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E7%B7%A8%E7%A2%BC/">編碼 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E6%AA%94%E6%A1%88%E6%A0%BC%E5%BC%8F%E6%AA%A2%E6%9F%A5/">檔案格式檢查 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E9%96%8B%E7%99%BC%E6%B5%81%E7%A8%8B/">開發流程 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E8%97%8D%E8%8A%BD%E8%80%B3%E6%A9%9F/">藍芽耳機 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E4%BE%8B%E5%A4%96%E8%99%95%E7%90%86/">例外處理 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E4%BC%81%E5%8A%83/">企劃 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E8%BB%9F%E9%AB%94%E6%9E%B6%E6%A7%8B%E8%A8%AD%E8%A8%88/">軟體架構設計 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E5%95%86%E6%A5%AD%E7%AB%B6%E8%B3%BD/">商業競賽 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="https://ballway.github.io/zh/tags/%E8%B3%87%E5%AE%89/">資安 <sup><strong><sup>1</sup></strong></sup> </a>
+        <a href="https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/">en</a>
     </li>
 </ul>
+
+</div>
+  </header> 
+  <div class="post-content"><p>幫自己整理了一下關於 UTF-8 BOM 編碼格式的觀念：</p>
+<ul>
+<li>如果會在 SQL Script 裡寫到非英數字的內容 (註解或 insert)，UTF-8 編碼就可以派上用場</li>
+<li>UTF-8 BOM 是比 UTF-8 多了一個標頭這樣，BOM 就是檔案會多一個標誌，讓文字編輯器一看就知道是 UTF-8 或 UTF-16 或 UTF-32</li>
+<li>如果沒有 BOM，文字編輯器打開檔案要先掃瞄內容，來猜說這個檔案是什麼編碼，但猜的結果不一定正確，所以直接選 UTF-8-BOM 就不用擔心編輯器猜錯</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>文章作者</strong>: Michael</p>
+<p><strong>上次更新</strong>: 2023-12-11</p>
+<p><strong>授權條款</strong>: 保留所有權利</p>
+</blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://ballway.github.io/zh/tags/%E7%B7%A8%E7%A2%BC/">編碼</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://ballway.github.io/zh/posts/tech/three-tier-architecture/">
+    <span class="title">« 上一頁</span>
+    <br>
+    <span>三層式架構簡介</span>
+  </a>
+  <a class="next" href="https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/">
+    <span class="title">下一頁 »</span>
+    <br>
+    <span>關於 C# 運算子 &amp;&amp; 的判斷順序</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
@@ -251,6 +322,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '複製';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已複製！';
+            setTimeout(() => {
+                copybutton.innerHTML = '複製';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

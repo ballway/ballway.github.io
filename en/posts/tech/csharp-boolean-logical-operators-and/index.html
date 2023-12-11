@@ -106,8 +106,8 @@
   "keywords": [
     "csharp"
   ],
-  "articleBody": "The English content is not completely ready.\nReference：\nBoolean Logical Operators:AND, OR, NOT, XOR Author: Michael\nLastMod: 2023-11-30\nLicense: All rights reserved\n",
-  "wordCount" : "31",
+  "articleBody": "When encountering False on the left side, the right side will not be evaluated.\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 bool SecondOperand() { Console.WriteLine(\"Second operand is evaluated.\"); return true; } bool a = false \u0026\u0026 SecondOperand(); Console.WriteLine(a); // Output: // False bool b = true \u0026\u0026 SecondOperand(); Console.WriteLine(b); // Output: // Second operand is evaluated. // True Reference：\nBoolean Logical Operators:AND, OR, NOT, XOR Author: Michael\nLastMod: 2023-12-11\nLicense: All rights reserved\n",
+  "wordCount" : "82",
   "inLanguage": "en",
   "datePublished": "2023-05-10T00:00:00Z",
   "dateModified": "2023-05-10T00:00:00Z",
@@ -218,17 +218,53 @@
 
 </div>
   </header> 
-  <div class="post-content"><p>The English content is not completely ready.</p>
-<p><img loading="lazy" src="/image/IMG_20230510-152918906.png" alt="about"  />
-</p>
-<p>Reference：</p>
+  <div class="post-content"><p>When encountering False on the left side, the right side will not be evaluated.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">SecondOperand</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Second operand is evaluated.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">a</span> <span class="p">=</span> <span class="kc">false</span> <span class="p">&amp;&amp;</span> <span class="n">SecondOperand</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Output:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// False</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">b</span> <span class="p">=</span> <span class="kc">true</span> <span class="p">&amp;&amp;</span> <span class="n">SecondOperand</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Output:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Second operand is evaluated.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// True</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Reference：</p>
 <ul>
 <li><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators#conditional-logical-and-operator-">Boolean Logical Operators:AND, OR, NOT, XOR</a></li>
 </ul>
 <hr>
 <blockquote>
 <p><strong>Author</strong>: Michael</p>
-<p><strong>LastMod</strong>: 2023-11-30</p>
+<p><strong>LastMod</strong>: 2023-12-11</p>
 <p><strong>License</strong>: All rights reserved</p>
 </blockquote>
 
@@ -244,6 +280,11 @@
     <span class="title">« Prev</span>
     <br>
     <span>Adivce about ATCC Case Competition</span>
+  </a>
+  <a class="next" href="https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/">
+    <span class="title">Next »</span>
+    <br>
+    <span>The Use Case of UTF-8 BOM</span>
   </a>
 </nav>
 

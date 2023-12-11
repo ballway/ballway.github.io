@@ -25,6 +25,15 @@
       <description>About C# Boolean Logical Operators: &amp;amp;&amp;amp;</description>
     </item>
     
+    <item>
+      <title>The Use Case of UTF-8 BOM</title>
+      <link>https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/</guid>
+      <description>I&amp;rsquo;ve organized my concepts about the UTF-8 BOM encoding format</description>
+    </item>
+    
     
     
   </channel>

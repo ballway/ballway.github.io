@@ -6,7 +6,16 @@
     <description>Recent content in 技術 on Michael&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 21 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLite DATETIME 格式問題</title>
+      <link>https://ballway.github.io/zh/posts/tech/sqlite-datetime-format-issue/</link>
+      <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/sqlite-datetime-format-issue/</guid>
+      <description>因為有新建資料表，前陣子寫了不同資料庫的更新語法，以方便讓客戶升級，結果意外踩到 SQLite 的一個坑</description>
+    </item>
+    
     <item>
       <title>檔案上傳安全機制</title>
       <link>https://ballway.github.io/zh/posts/tech/file-upload-security-mechanism/</link>
@@ -32,6 +41,15 @@
       
       <guid>https://ballway.github.io/zh/posts/tech/three-tier-architecture/</guid>
       <description>關於分層架構的說明</description>
+    </item>
+    
+    <item>
+      <title>關於 UTF-8 BOM 的使用時機</title>
+      <link>https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/</guid>
+      <description>幫自己整理了一下關於 UTF-8 BOM 編碼格式的觀念</description>
     </item>
     
     <item>

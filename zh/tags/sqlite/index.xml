@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SQLite on Michael&#39;s Blog</title>
+    <link>https://ballway.github.io/zh/tags/sqlite/</link>
+    <description>Recent content in SQLite on Michael&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/zh/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQLite DATETIME 格式問題</title>
+      <link>https://ballway.github.io/zh/posts/tech/sqlite-datetime-format-issue/</link>
+      <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/sqlite-datetime-format-issue/</guid>
+      <description>因為有新建資料表，前陣子寫了不同資料庫的更新語法，以方便讓客戶升級，結果意外踩到 SQLite 的一個坑</description>
+    </item>
+    
+  </channel>
+</rss>

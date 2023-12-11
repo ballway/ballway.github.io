@@ -73,6 +73,25 @@
                 href="https://ballway.github.io/zh/posts/"
                 />
   </url><url>
+    <loc>https://ballway.github.io/zh/tags/sqlite/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/posts/tech/sqlite-datetime-format-issue/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/posts/tech/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/posts/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/posts/tech/"
+                />
+  </url><url>
     <loc>https://ballway.github.io/zh/tags/csharp/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -95,19 +114,6 @@
     <loc>https://ballway.github.io/zh/posts/tech/about-csharp-try-catch/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ballway.github.io/zh/posts/tech/</loc>
-    <lastmod>2023-06-21T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ballway.github.io/en/posts/tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://ballway.github.io/zh/posts/tech/"
-                />
-  </url><url>
     <loc>https://ballway.github.io/zh/tags/%E4%BE%8B%E5%A4%96%E8%99%95%E7%90%86/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -119,6 +125,22 @@
   </url><url>
     <loc>https://ballway.github.io/zh/tags/%E8%B3%87%E5%AE%89/</loc>
     <lastmod>2023-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/tags/%E7%B7%A8%E7%A2%BC/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/</loc>
+    <lastmod>2023-05-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/"
+                />
   </url><url>
     <loc>https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/</loc>
     <lastmod>2023-01-09T00:00:00+00:00</lastmod>

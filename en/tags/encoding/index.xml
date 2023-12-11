@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>encoding on Michael&#39;s Blog</title>
+    <link>https://ballway.github.io/en/tags/encoding/</link>
+    <description>Recent content in encoding on Michael&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/en/tags/encoding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Use Case of UTF-8 BOM</title>
+      <link>https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/</link>
+      <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/</guid>
+      <description>I&amp;rsquo;ve organized my concepts about the UTF-8 BOM encoding format</description>
+    </item>
+    
+  </channel>
+</rss>
