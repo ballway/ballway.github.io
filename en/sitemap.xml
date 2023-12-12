@@ -128,6 +128,31 @@
                 href="https://ballway.github.io/en/posts/tech/the-use-case-of-utf-8-bom/"
                 />
   </url><url>
+    <loc>https://ballway.github.io/en/tags/encryption/</loc>
+    <lastmod>2022-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/en/tags/hash/</loc>
+    <lastmod>2022-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/en/tags/information-security/</loc>
+    <lastmod>2022-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ballway.github.io/en/posts/tech/encryption-hash-signature-note/</loc>
+    <lastmod>2022-10-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ballway.github.io/zh/posts/tech/encryption-hash-signature-note/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ballway.github.io/en/posts/tech/encryption-hash-signature-note/"
+                />
+  </url><url>
+    <loc>https://ballway.github.io/en/tags/signature/</loc>
+    <lastmod>2022-10-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ballway.github.io/en/archives/</loc>
     <xhtml:link
                 rel="alternate"

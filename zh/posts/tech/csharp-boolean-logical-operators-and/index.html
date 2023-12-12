@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>關於 C# 運算子 &amp;&amp; 的判斷順序 | Michael&#39;s Blog</title>
-<meta name="keywords" content="csharp">
+<meta name="keywords" content="CSharp">
 <meta name="description" content="關於 C# 運算子 AND 的判斷順序：左邊遇到 False 後，右邊就不會評估了">
 <meta name="author" content="">
 <link rel="canonical" href="https://ballway.github.io/zh/posts/tech/csharp-boolean-logical-operators-and/">
@@ -104,9 +104,9 @@
   "name": "關於 C# 運算子 \u0026\u0026 的判斷順序",
   "description": "關於 C# 運算子 AND 的判斷順序：左邊遇到 False 後，右邊就不會評估了",
   "keywords": [
-    "csharp"
+    "CSharp"
   ],
-  "articleBody": "左邊遇到 False 後，右邊就不會評估了\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 bool SecondOperand() { Console.WriteLine(\"Second operand is evaluated.\"); return true; } bool a = false \u0026\u0026 SecondOperand(); Console.WriteLine(a); // Output: // False bool b = true \u0026\u0026 SecondOperand(); Console.WriteLine(b); // Output: // Second operand is evaluated. // True 參考自官方文件的說明：\n布林值邏輯運算子：AND, OR, NOT, XOR 文章作者: Michael\n上次更新: 2023-11-30\n授權條款: 保留所有權利\n",
+  "articleBody": "左邊遇到 False 後，右邊就不會評估了\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 bool SecondOperand() { Console.WriteLine(\"Second operand is evaluated.\"); return true; } bool a = false \u0026\u0026 SecondOperand(); Console.WriteLine(a); // Output: // False bool b = true \u0026\u0026 SecondOperand(); Console.WriteLine(b); // Output: // Second operand is evaluated. // True 參考自官方文件的說明：\n布林值邏輯運算子：AND, OR, NOT, XOR 文章作者: Michael\n上次更新: 2023-12-12\n授權條款: 保留所有權利\n",
   "wordCount" : "118",
   "inLanguage": "zh",
   "datePublished": "2023-01-09T00:00:00Z",
@@ -264,7 +264,7 @@
 <hr>
 <blockquote>
 <p><strong>文章作者</strong>: Michael</p>
-<p><strong>上次更新</strong>: 2023-11-30</p>
+<p><strong>上次更新</strong>: 2023-12-12</p>
 <p><strong>授權條款</strong>: 保留所有權利</p>
 </blockquote>
 
@@ -273,7 +273,7 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://ballway.github.io/zh/tags/csharp/">csharp</a></li>
+      <li><a href="https://ballway.github.io/zh/tags/csharp/">CSharp</a></li>
     </ul>
 <nav class="paginav">
   <a class="prev" href="https://ballway.github.io/zh/posts/tech/the-use-case-of-utf-8-bom/">

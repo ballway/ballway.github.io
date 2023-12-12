@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>關於 C# try-catch 的注意事項 | Michael&#39;s Blog</title>
-<meta name="keywords" content="csharp, 例外處理">
+<meta name="keywords" content="CSharp, 例外處理">
 <meta name="description" content="C# 在 try-catch 的使用上有幾個要注意的點">
 <meta name="author" content="">
 <link rel="canonical" href="https://ballway.github.io/zh/posts/tech/about-csharp-try-catch/">
@@ -103,9 +103,9 @@
   "name": "關於 C# try-catch 的注意事項",
   "description": "C# 在 try-catch 的使用上有幾個要注意的點",
   "keywords": [
-    "csharp", "例外處理"
+    "CSharp", "例外處理"
   ],
-  "articleBody": "我們在 C# 會使用 try-catch 來做例外狀況的處理， 不過 try-catch 有幾個要注意的點：\n1. try-catch 不要吃案 在使用者的操作後，如果程式流程內有出現例外狀況而導致未能完成原本任務， 應該還是前端讓使用者知道發生了什麼錯誤，並把錯誤訊息 Log 下來，以方便後續的維護。\n2. 不要用 try-catch 來做流程控制 雖然 try-catch 能幫我們避免程式運作的中斷，但當有例外狀況被拋出時， App 內報 Exception 的動作是會耗掉不少效能的， 所以需要流程控制時，應該使用不會引發例外狀況的作法，例如： 需要字串轉數字，應該用 TryParse() 來做檢查和轉換，而不是用 try-catch 來包住 Parse()\n文章作者: Michael\n上次更新: 2023-12-07\n授權條款: 保留所有權利\n",
+  "articleBody": "我們在 C# 會使用 try-catch 來做例外狀況的處理， 不過 try-catch 有幾個要注意的點：\n1. try-catch 不要吃案 在使用者的操作後，如果程式流程內有出現例外狀況而導致未能完成原本任務， 應該還是前端讓使用者知道發生了什麼錯誤，並把錯誤訊息 Log 下來，以方便後續的維護。\n2. 不要用 try-catch 來做流程控制 雖然 try-catch 能幫我們避免程式運作的中斷，但當有例外狀況被拋出時， App 內報 Exception 的動作是會耗掉不少效能的， 所以需要流程控制時，應該使用不會引發例外狀況的作法，例如： 需要字串轉數字，應該用 TryParse() 來做檢查和轉換，而不是用 try-catch 來包住 Parse()\n文章作者: Michael\n上次更新: 2023-12-12\n授權條款: 保留所有權利\n",
   "wordCount" : "248",
   "inLanguage": "zh",
   "datePublished": "2023-06-21T00:00:00Z",
@@ -225,7 +225,7 @@ App 內報 Exception 的動作是會耗掉不少效能的，
 <hr>
 <blockquote>
 <p><strong>文章作者</strong>: Michael</p>
-<p><strong>上次更新</strong>: 2023-12-07</p>
+<p><strong>上次更新</strong>: 2023-12-12</p>
 <p><strong>授權條款</strong>: 保留所有權利</p>
 </blockquote>
 
@@ -234,7 +234,7 @@ App 內報 Exception 的動作是會耗掉不少效能的，
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://ballway.github.io/zh/tags/csharp/">csharp</a></li>
+      <li><a href="https://ballway.github.io/zh/tags/csharp/">CSharp</a></li>
       <li><a href="https://ballway.github.io/zh/tags/%E4%BE%8B%E5%A4%96%E8%99%95%E7%90%86/">例外處理</a></li>
     </ul>
 <nav class="paginav">

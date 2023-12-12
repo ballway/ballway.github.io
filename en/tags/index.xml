@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Sun, 19 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>case-competition</title>
+      <title>Case Competition</title>
       <link>https://ballway.github.io/en/tags/case-competition/</link>
       <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
       
@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>proposal</title>
+      <title>Proposal</title>
       <link>https://ballway.github.io/en/tags/proposal/</link>
       <pubDate>Sun, 19 Nov 2023 00:00:00 +0000</pubDate>
       
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>csharp</title>
+      <title>CSharp</title>
       <link>https://ballway.github.io/en/tags/csharp/</link>
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
       
@@ -35,11 +35,47 @@
     </item>
     
     <item>
-      <title>encoding</title>
+      <title>Encoding</title>
       <link>https://ballway.github.io/en/tags/encoding/</link>
       <pubDate>Wed, 10 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://ballway.github.io/en/tags/encoding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Encryption</title>
+      <link>https://ballway.github.io/en/tags/encryption/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/en/tags/encryption/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hash</title>
+      <link>https://ballway.github.io/en/tags/hash/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/en/tags/hash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Information Security</title>
+      <link>https://ballway.github.io/en/tags/information-security/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/en/tags/information-security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Signature</title>
+      <link>https://ballway.github.io/en/tags/signature/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/en/tags/signature/</guid>
       <description></description>
     </item>
     

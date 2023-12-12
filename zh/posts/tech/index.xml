@@ -71,6 +71,15 @@
     </item>
     
     <item>
+      <title>學習筆記：加解密、雜湊、簽章</title>
+      <link>https://ballway.github.io/zh/posts/tech/encryption-hash-signature-note/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/zh/posts/tech/encryption-hash-signature-note/</guid>
+      <description>幫自己整理關於加密、雜湊、簽章的基本觀念</description>
+    </item>
+    
+    <item>
       <title>藍芽耳機連接電腦問題</title>
       <link>https://ballway.github.io/zh/posts/tech/my-airpods2-issue/</link>
       <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>

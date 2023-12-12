@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Information Security on Michael&#39;s Blog</title>
+    <link>https://ballway.github.io/en/tags/information-security/</link>
+    <description>Recent content in Information Security on Michael&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 03 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ballway.github.io/en/tags/information-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Notes: Encryption, Hashing, and Signature</title>
+      <link>https://ballway.github.io/en/posts/tech/encryption-hash-signature-note/</link>
+      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ballway.github.io/en/posts/tech/encryption-hash-signature-note/</guid>
+      <description>I&amp;rsquo;ve organized the basic concepts about encryption, hashing, and signature</description>
+    </item>
+    
+  </channel>
+</rss>
